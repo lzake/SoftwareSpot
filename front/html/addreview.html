@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>SoftSpot</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.2/css/bulma.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="shortcut icon" type="image/x-icon" href="../img/Favicon.ico">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Muli%7CRoboto:400,300,500,700,900" rel="stylesheet">
+</head>
+
+<body>
+  <nav class="nav has-shadow">
+    <div class="container">
+      <div class="nav-left" style="display: flex;padding-top:10px">
+        <p id="search-box" class="control has-addons" style="padding-bottom:20px;padding-left:20px;padding-right:20px;">
+
+          <select name="tech" class="pincode">
+            <option value="blank" disabled selected>Select a Tech</option>
+          </select>&nbsp;&nbsp;
+
+          <i class="fa fa-desktop"></i> &nbsp;&nbsp;&nbsp;&nbsp;
+          <select name="user" class="userselect">
+              <option value="blank" disabled selected>Find a top user</option>
+            </select>&nbsp;&nbsp;
+
+          <i class="fa fa-users"></i>
+
+        </p>
+      </div>
+
+      <div class="nav-center">
+        <a class="nav-item" href="./index.html">
+          <img src="../img/softspot-logo.png" alt="logo">
+        </a>
+      </div>
+
+      
+
+      <div class="nav-right nav-menu">
+        <span class="nav-item">
+          <a id="login-button" class="auth0-login button">
+            <span>Login / Sign up </span>
+        </a>
+        <p id="welcome-text">Hello, </p>
+        </span>
+      </div>
+    </div>
+  </nav>
+  </section>
+  <main role="main">
+
+    <div class="section main">
+      <!-- <section id="signupForm" class="modal is-active"> -->
+      <!-- <div class="modal is-active"> -->
+      <!-- <div class="modal-background"></div> -->
+      <!-- <div class="modal-card is-active"> -->
+      <section class="modal-card-body">
+        <section class="hero is-fullheight is-dark is-bold">
+          <form id="addTechReviewForm" role="search" method="post" action="./tech.html">
+            <!-- <fieldset> -->
+            <div class="hero-body">
+              <div class="container">
+                <div class="columns is-vcentered">
+                  <div class="column is-12">
+                    <legend>
+                      <h1 class="title">
+                                      Review Tech
+                                  </h1></legend>
+                    <div class="box">
+                      <label class="label">Category</label>
+                      <div class="select">
+                        <select id="techCatSelect">
+                                                    <option value="blank" disabled selected>Select</option>
+                                                    <option data-category="TE">Text Editor</option>
+                                                    <option data-category="Software">Software</option>
+                                                    <option data-category="Language">Language</option>
+                                                    <option data-category="Library">Library</option>
+                                                    <option data-category="Markup Language">Markup Language</option>
+                                                    </select>
+                      </div><br>
+                      <label class="label">Technology</label>
+                      <p class="control">
+                        <input id="techAddTitle" class="input" type="text" placeholder="Good software here..">
+                      </p>
+                      <label for="techAddTitle" class="label">Title</label>
+                      <p class="control">
+                        <input id="techAddTitle" class="input" type="text" placeholder="CSS is Awesome">
+                      </p>
+                      <label class="label">Rating</label>
+                      <div id="techAddRating" class="control">
+                        <label class="radio"><input value="1" name="rating" type="radio" >1</label>
+
+                        <label class="radio"><input value="2" name="rating" type="radio" >2</label>
+
+                        <label class="radio"><input value="3" name="rating" type="radio" >3</label>
+
+                        <label class="radio"><input value="4"
+                                                            name="rating" type="radio" >4</label>
+
+                        <label class="radio"><input value="5" name="rating" type="radio" >5</label>
+                      </div>
+
+                      <hr>
+                      <div class="control">
+                        <label class="label">Body</label>
+                        <textarea id="techAddText" class="textarea" placeholder="Write review" rows="10"> </textarea>
+                      </div>
+                      <hr>
+                      <p class="control">
+                        <button class="button is-primary is-large">Cancel</button>
+                        <button class="button is-default is-large" type="submit">Submit</button>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- </fieldset> -->
+          </form>
+          <!-- </div> -->
+        </section>
+      </section>
+
+      <!-- </div> -->
+    </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="content has-text-centered">
+
+        <p><strong>SoftSpot</strong> by TecKNOWLEDGEY^n. The source code is licensed </p>
+        <p> 123 Delawere St, Denver, CO 80229 </p>
+        <p> softspotg59@gmail.com &copy; Copyright 2017 </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="../js/script.js"></script>
+  <script src="../js/addreview.js"></script>
+  <script src="../js/techdropdown.js"></script>
+  <script src="../js/userdropdown.js"></script>
+
+</body>
+
+</html>

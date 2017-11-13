@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SoftSpot</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.1.0/css/bulma.min.css">
+  <link rel="stylesheet" type="text/css" href="../css/style.css">
+  <link rel="stylesheet" type="text/css" href="../css/profile.css">
+
+  <link rel="shortcut icon" type="image/x-icon" href="../img/Favicon.ico">
+</head>
+
+<body>
+  <nav class="nav has-shadow">
+    <div class="nav-left" style="display: flex;padding-top:10px">
+      <p id="search-box" class="control has-addons" style="padding-bottom:20px;padding-left:20px;padding-right:20px;">
+        <select name="tech" class="pincode">
+            <option value="blank" disabled selected>Select a Tech</option>
+          </select> &nbsp;&nbsp; <i class="fa fa-desktop button"></i> &nbsp;&nbsp;&nbsp;&nbsp;
+        <select name="user" class="userselect">
+              <option value="blank" disabled selected>Find a top user</option>
+            </select>&nbsp;&nbsp;
+        <i class="fa fa-users"></i>
+      </p>
+    </div>
+
+    <div class="nav-center">
+      <a class="nav-item" href="./index.html">
+          <img src="../img/softspot-logo.png" alt="logo">
+        </a>
+    </div>
+
+
+
+    <div class="nav-right nav-menu">
+      <span class="nav-item">
+          <a id="login-button" class="auth0-login button">
+            <span>Login / Sign up </span>
+      </a>
+      <p id="welcome-text">Hello, </p>
+      </span>
+    </div>
+    </div>
+  </nav>
+
+  <div class="container profile">
+
+    <div class="section profile-heading">
+      <div class="columns">
+        <div class="column is-2">
+          <div class="image is-128x128 avatar">
+            <img src="https://lh6.googleusercontent.com/-879Bf-wWpyo/AAAAAAAAAAI/AAAAAAAAAls/fRjoYzTCMgE/photo.jpg">
+          </div>
+        </div>
+        <div class="column is-4 name">
+          <p>
+            <span class="title is-bold">Maire Chew</span>
+            <span class="button is-primary is-outlined follow">Follow</span>
+          </p>
+          <p class="tagline">Communications guru with a passion for digital media and web development. Development experience in JavaScript and committed to a lifetime of learning in this ever-changing technological world. <br> <br>If you'd like to learn more about my background
+            or grab coffee, please send an email my way!</p>
+        </div>
+        <div class="column is-2 followers has-text-centered">
+          <p class="stat-val">129k</p>
+          <p class="stat-key">followers</p>
+        </div>
+        <div class="column is-2 following has-text-centered">
+          <p class="stat-val">2k</p>
+          <p class="stat-key">following</p>
+        </div>
+        <div class="column is-2 likes has-text-centered">
+          <p class="stat-val">29</p>
+          <p class="stat-key">likes</p>
+        </div>
+      </div>
+    </div>
+    <div class="profile-options">
+      <div class="tabs is-fullwidth">
+        <ul>
+          <li class="link is-active"><a><span class="icon"><i class="fa fa-list"></i></span> <span>My Lists</span></a></li>
+          <li class="link"><a><span class="icon"><i class="fa fa-heart"></i></span> <span>My Likes</span></a></li>
+          <li class="link"><a><span class="icon"><i class="fa fa-th"></i></span> <span>My Posts</span></a></li>
+          <li class="link"><a><span class="icon"><i class="fa fa-bookmark"></i></span> <span>My Bookmarks</span></a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="box">
+      <!-- Main container -->
+      <nav class="level">
+        <!-- Left side -->
+        <div class="level-left">
+          <div class="level-item">
+            <p class="subtitle is-5">
+              <strong>123</strong> posts
+            </p>
+          </div>
+          <div class="level-item">
+            <p class="control has-addons">
+              <input class="input" type="text" placeholder="Find a review">
+              <button class="button">
+                    Search
+                  </button>
+            </p>
+          </div>
+        </div>
+
+
+
+        <!-- Right side -->
+        <div class="level-right">
+          <p class="level-item"><strong>All</strong></p>
+          <p class="level-item"><a>Drafts</a></p>
+          <p class="level-item"><a>Deleted</a></p>
+          <p class="level-item"><a class="button is-success">New</a></p>
+        </div>
+      </nav>
+    </div>
+
+    <div class="spacer"></div>
+
+
+    <div class="tile is-ancestor">
+      <div class="tile is-parent">
+        <article class="tile is-child box">
+          <p class="title">I love Atom.</p>
+          <p class="subtitle">Rating: 5</p>
+          <div class="content">
+            <p>Prior to using Atom, I was a heavy Sublime Text user. I have been using Atom as my everyday text editor for about 3-months. What I truly love about Atom is that you can literally make it whatever you want. If you want IDE features, easy, just
+              install a package. Want to spawn terminal sessions and servers from within Atom? There is packages for that too.There are plugins and themes for just about anything."</p>
+          </div>
+        </article>
+      </div>
+
+
+      <div class="tile is-parent">
+        <article class="tile is-child box">
+          <p class="title">VS Code was ok.</p>
+          <p class="subtitle">Rating: 3</p>
+          <div class="content">
+            <p>This is a very good editor for code/general purpose, and has (almost) totally replaced notepad++/sublimeText/Atom for me. It feels lighter than Atom, while being easily extended anyway, is way faster to configure, and have quite good autocomplete
+              out of the box. It also have a nice integrated debug tool, which is always nice to have, and is always evolving and listening to user's requests. It is known for its great typescript support, but I mainly used it for Python, Java, and other
+              langages (not as much as these two), and it did not disappoint me. </p>
+          </div>
+        </article>
+      </div>
+
+      <div class="tile is-parent">
+        <article class="tile is-child box">
+          <p class="title">Postman was extremely helpful.</p>
+          <p class="subtitle">Rating: 4</p>
+          <div class="content">
+            <p>Postman is a software that helps developers and companies develope API workflow, it is efficient on Chrome to test, develop and document APIs and create complex requests, go back in time and view results in a beautiful way.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <div class="tile is-ancestor">
+      <div class="tile is-parent">
+        <article class="tile is-child box">
+          <p class="title">JavaScript very helpful.</p>
+          <p class="subtitle">Rating: 5</p>
+          <div class="content">
+            <p>I’ll concede that JavaScript can be considered an Object Oriented language, I just don’t think it’s a good example of one. Especially as your first exposure. Most of the ways you program in an object oriented fashion with JavaScript go drastically
+              against the grain of other languages. That’s not a bad thing in itself, I just think you’ll be better served by learning the more common style of OOP first so that you’re set up to learn several of the C based languages (and others) more
+              easily.</p>
+          </div>
+        </article>
+      </div>
+
+      <div class="tile is-parent">
+        <article class="tile is-child box">
+          <p class="title">Bulma</p>
+          <p class="subtitle">Rating: 4</p>
+          <div class="content">
+            <p>Bulma is still in early development. It doesn't use any vendor prefixes for flexbox (but autoprefixer could fix that). Even then, it would only support IE10+.</p>
+          </div>
+        </article>
+      </div>
+
+      <div class="tile is-parent">
+        <article class="tile is-child box">
+          <p class="title">React = The Ultimate JS Library</p>
+          <p class="subtitle">Rating: 5</p>
+          <div class="content">
+            <p>React.js allows you to describe your UI in a modular way that captures the dependency tree of your view. React makes it particularly easy to build very asymmetric DOM structures in pure Javascript. It does this by allowing you to clearly describe
+              a one-to-one mapping between the HTML elements you plan to put in the DOM tree and the context free grammar of the Javascript functions used to represent these elements. This method of describing the DOM also implicitly captures the dependency
+              tree of your UI components, so when something changes, the framework is able to traverse the tree and figure out what changed.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <footer class="footer" role="contetinfo">
+      <div class="container">
+        <div class="content has-text-centered">
+
+          <p><strong>SoftSpot</strong> by TecKNOWLEDGEY^n. The source code is licensed </p>
+          <p> 123 Delawere St, Denver, CO 80229 </p>
+          <p> softspotg59@gmail.com &copy; Copyright 2017 </p>
+        </div>
+      </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="../js/script.js"></script>
+    <script src="../js/user.js">
+    </script>
+    <script type="text/javascript" src="../js/techdropdown.js"></script>
+    <script type="text/javascript" src="../js/userdropdown.js"></script>
+    <script type="text/javascript" src="../js/signup.js"></script>
+    <script src="https://cdn.auth0.com/js/auth0/8.9/auth0.min.js"></script>
+</body>
+
+</html>

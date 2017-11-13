@@ -1,0 +1,29 @@
+{
+  "name": "SoftSpot_back",
+  "version": "1.0.0",
+  "description": "Back-end",
+  "main": "app.js",
+  "scripts": {
+    "start": "node ./bin/www",
+    "dev": "nodemon"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Agentkma/SoftSpot_back.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Agentkma/SoftSpot_back/issues"
+  },
+  "homepage": "https://github.com/Agentkma/SoftSpot_back#readme",
+  "dependencies": {
+    "body-parser": "^1.18.1",
+    "cors": "^2.8.4",
+    "dotenv": "^4.0.0",
+    "express": "^4.15.4",
+    "knex": "^0.13.0",
+    "pg": "^7.3.0"
+  }
+}

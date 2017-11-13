@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Technology</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.1.0/css/bulma.min.css">
+  <link rel="stylesheet" type="text/css" href="../css/timeline.css">
+  <link rel="shortcut icon" type="image/x-icon" href="../img/Favicon.ico">
+
+  <style type="text/css">
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="nav has-shadow">
+    <div class="container">
+      <div class="nav-left" style="display: flex;padding-top:10px">
+        <p id="search-box" class="control has-addons" style="padding-bottom:20px;padding-left:20px;padding-right:20px;">
+
+          <select name="tech" class="pincode">
+            <option value="blank" disabled selected>Select a Tech</option>
+          </select>&nbsp;&nbsp;
+
+          <i class="fa fa-desktop"></i> &nbsp;&nbsp;&nbsp;&nbsp;
+          <select name="user" class="userselect">
+              <option value="blank" disabled selected>Find a top user</option>
+            </select>&nbsp;&nbsp;
+
+          <i class="fa fa-users"></i>
+
+        </p>
+      </div>
+
+      <div class="nav-center">
+        <a class="nav-item" href="./index.html">
+          <img src="../img/softspot-logo.png" alt="logo">
+        </a>
+      </div>
+
+
+
+      <div class="nav-right nav-menu">
+        <span class="nav-item">
+          <a id="login-button" class="auth0-login button">
+            <span>Login / Sign up </span>
+        </a>
+        <p id="welcome-text">Hello, </p>
+        </span>
+      </div>
+    </div>
+  </nav>
+  <section class="section main">
+    <div class="tile is-ancestor">
+      <div class="tile is-vertical is-8">
+        <div class="tile">
+
+          <div class="tile is-parent">
+            <article class="tile is-child notification is-primary">
+              <p id="tech-name" class="title"></p>
+              <figure class="image is-4by3">
+                <img id="tech-img" src="">
+              </figure>
+            </article>
+          </div>
+          <div class="tile is-parent is-vertical">
+            <article class="tile is-child notification is-primary">
+              <p class="title">Category</p>
+              <p class="subtitle" id="category-name"></p>
+            </article>
+            <article class="tile is-child notification is-primary">
+              <p class="title">Description</p>
+              <p class="subtitle" id="description"></p>
+
+            </article>
+            <article class="tile is-child notification is-primary">
+              <p class="title">Avg. Rating</p>
+              <p class="subtitle" id="avg-rating"></p>
+            </article>
+            <article class="tile is-child notification is-primary" id="link-to-review">
+              <a href="addreview.html">
+                <p class="title">Add Review</p>
+              </a>
+            </article>
+          </div>
+        </div>
+        <div class="tile is-parent">
+          <article class="tile is-child notification is-info">
+            <p class="title">Related Technologies</p>
+            <p class="subtitle"></p>
+            <div class="content" id="related-tech">
+
+            </div>
+          </article>
+        </div>
+      </div>
+      <div class="tile is-parent">
+        <article class="tile is-child notification is-dark">
+          <div class="content">
+            <p class="title">Reviews</p>
+            <div class="content" id="reviews">
+
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+
+  </section>
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class="content has-text-centered">
+
+        <p><strong>SoftSpot</strong> by TecKNOWLEDGEY^n. The source code is licensed </p>
+        <p> 123 Delawere St, Denver, CO 80229 </p>
+        <p> softspotg59@gmail.com &copy; Copyright 2017 </p>
+      </div>
+    </div>
+  </footer>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="../js/tech.js">
+</script>
+<script type="text/javascript" src="../js/techdropdown.js"></script>
+<script type="text/javascript" src="../js/userdropdown.js"></script>
+<script type="text/javascript" src="../js/signup.js"></script>
+<script src="https://cdn.auth0.com/js/auth0/8.9/auth0.min.js"></script>
+
+</html>

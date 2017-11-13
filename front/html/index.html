@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SoftSpot</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.1.0/css/bulma.min.css">
+  <!-- <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.0/slick/slick.css"/> -->
+  <link rel="stylesheet" type="text/css" href="../css/timeline.css">
+  <link rel="stylesheet" type="text/css" href="../css/style.css">
+  <link rel="stylesheet" type="text/css" href="../css/profile.css">
+
+  <link rel="shortcut icon" type="image/x-icon" href="../img/Favicon.ico">
+
+
+  <style type="text/css">
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="nav has-shadow">
+    <div class="container">
+      <div class="nav-left" style="display: flex;padding-top:10px">
+        <p id="search-box" class="control has-addons" style="padding-bottom:20px;padding-left:20px;padding-right:20px;">
+
+          <select name="tech" class="pincode">
+            <option value="blank" disabled selected>Select a Tech</option>
+          </select>&nbsp;&nbsp;
+
+          <i class="fa fa-desktop"></i> &nbsp;&nbsp;&nbsp;&nbsp;
+          <select name="user" class="userselect">
+              <option value="blank" disabled selected>Find a top user</option>
+            </select>&nbsp;&nbsp;
+
+          <i class="fa fa-users"></i>
+
+        </p>
+      </div>
+
+      <div class="nav-center">
+        <a class="nav-item" href="./html/index.html">
+          <img src="../img/softspot-logo.png" alt="logo">
+        </a>
+      </div>
+
+
+      <div class="nav-right nav-menu">
+        <span class="nav-item">
+          <a id="login-button" class="auth0-login button">
+            <span>Login / Sign up </span>
+        </a>
+        <p id="welcome-text">Hello, </p>
+        </span>
+      </div>
+    </div>
+  </nav>
+  <section class="section main">
+    <div class="container">
+      <div class="columns has-text-centered">
+        <div class="column has-text-centered">
+          <div class="card is-fullwidth">
+            <p class="trend-title"><span class="Tech-titles"> <strong>Trending
+                Technologies </strong></span></p>
+
+            <!-- Carousol -->
+
+            <section class="section container hero has-text-centered">
+              <div class="photos has-text-centered">
+
+
+                <div id="slider has-text-centered">
+
+                  <img class="img-size" src="https://logo.clearbit.com/https://www.mysql.com/?s=128" alt>
+                  <img class="img-size" src="https://logo.clearbit.com/java.com?s=128" alt>
+                  <img class="img-size" src="https://logo.clearbit.com/https://www.javascript.com/?s=128" alt>
+                  <img class="img-size" src="https://logo.clearbit.com/https://www.asp.net/?s=128" alt>
+                  <img class="img-size" src="https://logo.clearbit.com/python.org?s=128" alt>
+                  <img class="img-size" src="https://logo.clearbit.com/http://www.cplusplus.com/?s=128" alt>
+                  <img class="img-size" src="https://logo.clearbit.com/http://php.net/?s=128" alt>
+                  <img class="img-size" src="https://logo.clearbit.com/http://rubyonrails.org/?s=128" alt>
+                  <img class="img-size" src="https://logo.clearbit.com/https://jquery.com/?s=128" alt>
+                </div>
+              </div>
+            </section>
+            <!-- End Carousol -->
+
+          </div>
+
+        </div>
+        <div class="column">
+          <div id="review-box" class="box">
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdn.auth0.com/js/auth0/8.9/auth0.min.js"></script>
+  <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.0/slick/slick.min.js"></script> -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.js"></script>
+  <script type="text/javascript" src="../js/script.js"></script>
+  <script type="text/javascript" src="../js/signup.js"></script>
+
+
+
+
+  <script id="review-feed-template" type="text/x-handlebars-template">
+    {{#each reviews}}
+    <article class="media">
+      <div class="media-left">
+        <figure class="image is-64x64">
+          <img src="https://logo.clearbit.com/{{url}}">
+          <alt="Image">
+        </figure>
+      </div>
+      <div class="media-content">
+        <div class="content">
+          <p>
+            <strong>{{title}}</strong> <small>{{user_name}}</small> <small style="float:right;">{{tech_name}}</small>
+            <br> {{body}}
+          </p>
+
+        </div>
+        <nav class="level">
+          <div class="level-left">
+            <a class="level-item" title="{{url}}" href="http://{{url}}">
+              <span class="icon is-small"><i class="fa fa-reply"></i></span>
+            </a>
+          </div>
+        </nav>
+      </div>
+    </article>
+    {{/each}}
+  </script>
+
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class="content has-text-centered">
+
+        <p><strong>SoftSpot</strong> by TecKNOWLEDGEY^n. The source code is licensed </p>
+        <p> 123 Delawere St, Denver, CO 80229 </p>
+        <p> softspotg59@gmail.com &copy; Copyright 2017 </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="../js/script.js"></script>
+  <script src="../js/addreview.js"></script>
+  <script src="../js/techdropdown.js"></script>
+  <script src="../js/userdropdown.js"></script>
+
+</body>
+
+</html>

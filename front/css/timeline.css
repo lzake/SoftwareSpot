@@ -1,0 +1,299 @@
+/*Carousel*/
+
+.columns {
+  margin: -35px 0;
+  padding: 0;
+}
+
+
+/*@keyframes slidy {
+  0% {
+    left: 0%;
+  }
+  20% {
+    left: 0%;
+  }
+  25% {
+    left: -100%;
+  }
+  45% {
+    left: -100%;
+  }
+  50% {
+    left: -200%;
+  }
+  70% {
+    left: -200%;
+  }
+  75% {
+    left: -300%;
+  }
+  95% {
+    left: -300%;
+  }
+  100% {
+    left: -400%;
+  }
+}*/
+
+
+/*div#slider {
+  overflow: hidden;
+}*/
+
+
+/*div#slider figure img {
+  float: left;
+}
+
+div#slider figure {
+  position: relative;
+  width: auto;
+  height: auto;
+  margin: 0;
+  left: 0;
+  text-align: center;
+  font-size: 0;
+  animation: 30s slidy infinite;
+}*/
+
+div #slider {
+  max-height: 90vh;
+}
+
+.hero {
+  height: 85vh;
+  overflow: scroll;
+}
+
+
+/*Carousel*/
+
+.section.main {
+  background-color: #f5f8fa;
+  /*width: 100%;
+  height: 100%;
+  background: url('https://media.licdn.com/mpr/mpr/AAEAAQAAAAAAAAiJAAAAJDcwMTNjMDk5LTJhMDEtNGY3ZS1iMmQ4LTBiODk4NmY3Mzc0OA.jpg') center center no-repeat;
+  background-size: cover;*/
+}
+
+#review-box {
+  max-height: 100vh;
+  overflow: scroll;
+}
+
+#test {
+  justify-content: center;
+}
+
+.card-header {
+  background-image: url("http://placehold.it/600x200");
+  background-position: 0 50%;
+  background-size: 100% auto;
+  border-bottom: 1px solid #e1e8ed;
+  border-radius: 4px 4px 0 0;
+  height: 95px;
+  width: 100%;
+}
+
+.card-content {
+  padding: 0px;
+}
+
+.card-avatar {
+  background-color: #fff;
+  border-radius: 6px;
+  display: inline-block !important;
+  float: left;
+  margin: -30px 5px 0 8px;
+  max-width: 100%;
+  padding: 1px;
+  vertical-align: bottom;
+}
+
+.card-avatar-img {
+  border: 2px solid #fff;
+  border-radius: 7px;
+  box-sizing: border-box;
+  color: #fff;
+  height: 72px;
+  width: 72px;
+}
+
+.card-user {
+  margin: 5px 0 0;
+}
+
+.card-user-name {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21px;
+}
+
+.card-user-name a {
+  color: inherit !important;
+}
+
+.card-stats {
+  margin-left: 11px;
+  padding: 10px 0;
+}
+
+.card-stats-list {
+  box-sizing: border-box;
+  display: table;
+  margin: 0;
+  min-width: 100%;
+  padding: 0;
+  table-layout: auto;
+}
+
+ul.card-stats-list {
+  list-style: outside none none;
+  margin: 0;
+  padding: 0;
+}
+
+.card-stats-item {
+  display: table-cell;
+  padding: 0;
+  vertical-align: top;
+}
+
+.card-stats-item a:hover {
+  text-decoration: none;
+}
+
+.card-stats-val {
+  display: block;
+  font-size: 18px;
+  font-weight: 500;
+  transition: color 0.15s ease-in-out 0s;
+}
+
+.card-stats-key {
+  color: #8899a6;
+  font-size: 10px;
+  letter-spacing: 0.02em;
+  overflow: hidden;
+  text-transform: uppercase;
+  transition: color 0.15s ease-in-out 0s;
+}
+
+.spacer {
+  height: 20px;
+}
+
+.trending .trend-title {
+  padding-bottom: 10px;
+  text-align: center;
+  position: relative;
+}
+
+.Tech-titles {
+  font-size: 30px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.trending {
+  max-width: 30vh;
+}
+
+.photos {
+  display: flex;
+  justify-content: center;
+}
+
+.img-size {
+  height: 100px;
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5%;
+}
+
+.trending .trend-hashtag {
+  padding-bottom: 8px;
+}
+
+#link-to-review a {
+  color: white;
+  height: 100%;
+  width: 100%;
+  margin: 0
+}
+
+#link-to-review:hover {
+  background-color: #39E2F5;
+}
+
+.techpage-review {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 3%;
+  background-color: #1fc8db;
+  width: 100%;
+  /*height: 175px;*/
+  overflow: scroll;
+  margin-bottom: 20px;
+  border: 3px solid white;
+}
+
+.techpage-review h1 {
+  color: white;
+  margin-top: 4%;
+  width: 80%;
+  overflow-wrap: break-word;
+}
+
+.techpage-review p {
+  width: 80%;
+  overflow-wrap: break-word;
+  font-size: 1.2em;
+  margin-bottom: 1%;
+  padding-bottom: 3%;
+  border-bottom: 1px solid white;
+}
+
+.techpage-review span {
+  font-size: 1.1em;
+  padding-bottom: 3%;
+}
+
+#related-tech {
+  display: flex;
+  align-items: center;
+}
+
+.related {
+  margin-right: 50px;
+  height: 170px;
+  width: 170px;
+}
+
+.related a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.5em;
+  padding-top: 5px;
+}
+
+.related a:visited {
+  color: white;
+}
+
+.content a:not(.button):visited {
+  color: white;
+}
+
+#search-box {
+  padding-top: 10px;
+  padding-right: 10px;
+}
+
+#user-search {
+  padding-top: 10px;
+}
