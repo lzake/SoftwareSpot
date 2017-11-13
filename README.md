@@ -3,4 +3,4 @@
 
 
 
-![code example](softspot.png)
+![giphy](https://media.giphy.com/media/3o6fJbmZIoipFxO9WM/giphy.gif)
